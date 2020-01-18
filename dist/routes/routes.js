@@ -9,10 +9,8 @@ var _express = require("express");
 
 var router = (0, _express.Router)();
 router.post('/file', function (req, resp, next) {
-  console.log(req.file.path);
-  console.log(req.file);
   return resp.send({
-    path: req.file.filename
+    path: req.file
   });
 });
 router.get('/go', function (req, res) {
