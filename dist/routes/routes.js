@@ -12,7 +12,7 @@ router.post('/file', function (req, resp, next) {
   console.log(req.file.path);
   console.log(req.file);
   return resp.send({
-    path: req.file.path
+    path: req.file.filename
   });
 });
 router.get('/go', function (req, res) {
