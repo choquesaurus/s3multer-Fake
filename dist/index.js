@@ -60,7 +60,7 @@ function () {
   }, {
     key: "start",
     value: function start() {
-      this.app.listen(5555 || process.env.PORT, function () {
+      this.app.listen(process.env.PORT || 5555, function () {
         console.log("running in port 6000");
       });
     }
